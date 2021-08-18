@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pin Checker</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="autoGenerate">
+            <div class="form-control">
+                <input  id="randomInput" type="text">
+            </div>
+            <div class="randomBtn">
+                <button id="generatePin">Generate <br> Pin</button>
+            </div>
+        </div>
+        <div class="typed">
+            <div class="form-control">
+                <input id="typedInput" type="text">
+            </div>
+            <div id="keyPad">
+                <div class="keyPadRow">
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                </div>
+                <div class="keyPadRow">
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                </div>
+                <div class="keyPadRow">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                </div>
+                <div class="keyPadRow">
+                    <button>&#60;</button>
+                    <button>0</button>
+                    <button>C</button>
+                </div>
+                <button id="submitBtn">Submit</button>
+                <p class="left">3 Try left</p>
+            </div>
+        </div>
+    </div>
+    <div class="result">
+        <p class="notify" id="fail">❌ Pin Didn't Match, Please try again</p>
+        <p class="notify" id="success">✅ Pin Matched... Secret door is opening for you</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
